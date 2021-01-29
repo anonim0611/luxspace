@@ -25,10 +25,10 @@ module.exports = {
       red: colors.red,
       yellow: colors.amber,
       green: colors.emerald,
-      blue: colors.blue,
+      blue: { ...colors.blue, 200: "#BCE7F0" },
       indigo: colors.indigo,
       purple: colors.violet,
-      pink: {...colors.pink, 400: "#F9CADA"},
+      pink: { ...colors.pink, 400: "#F9CADA" },
     },
     spacing: {
       px: "1px",
@@ -173,9 +173,7 @@ module.exports = {
       DEFAULT: "1",
     },
     fontFamily: {
-      sans:[
-        "'Open Sans', sans-serif",
-      ],
+      sans: ["'Open Sans', sans-serif"],
       serif: [],
       mono: [],
     },
