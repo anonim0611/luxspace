@@ -20,4 +20,8 @@
     .overlay.hoverable:hover > * {
         @apply opacity-100;
     }
+
+    .overlay .video{
+        @apply absolute transform bg-blue-200 bg-no-repeat bg-center w-20 h-20 rounded-full flex items-center justify-center -translate-x-1/2 -translate-y-1/2; background-image: url("../images/design/icon-play.svg"); top:50%;
+    }
 }
