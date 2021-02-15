@@ -13,9 +13,8 @@ function accordion() {
     );
 
     button.style.top = "50%";
-    button.innerHTML = `<svg width="20" height="9" viewBox="0 0 20 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M1 1L9.75 7.5L18.5 1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>`;
+    button.innerHTML = `<svg width="20" height="9" viewBox="0 0 20 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L9.75 7.5L18.5 1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+
     const ulList = e.getElementsByTagName("ul")[0];
     addClass(ulList, "transition duration-200");
 
@@ -31,6 +30,7 @@ function accordion() {
       }
     }
     button.addEventListener("click", onClickAccordion);
+
     e.getElementsByTagName("h5")[0].append(button);
   }
 }
